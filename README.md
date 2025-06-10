@@ -2,7 +2,7 @@
 ### ID: 120210287
 
 ## Introduction:
-This project is a complete (to-do) compiler for the `Tiny` programming language. `Tiny` is considered as subset of the `C` language contains:
+This project is a complete compiler for the `Tiny` programming language. `Tiny` is considered as subset of the `C` language contains:
 - Data types: `int`, `float`, `string`, `bool`
 - Variables declaration is the same as `C`    
      ```C 
@@ -523,9 +523,9 @@ AssignmentNode
 TAC:
 
 ```
-MULT b c $T0
-ADDI a $T0 $T1
-STOREI $T1 x
+MULT b c \$T0
+ADDI a \$T0 \$T1
+STOREI \$T1 x
 ```
 
 ---
@@ -550,10 +550,10 @@ TAC:
 LABEL main
 DECL z1
 DECL counter
-GT z1 5 $T0
-LT z1 counter $T1
-EQ z1 1 $T2
-AND $T1 $T2 $T3
+GT z1 5 \$T0
+LT z1 counter \$T1
+EQ z1 1 \$T2
+AND \$T1 \$T2 \$T3
 OR $T0 $T3 $T4
 JUMPZ $T4 L0
 WRITE z1
