@@ -1,0 +1,133 @@
+(
+  program 
+  (
+    main int main 
+    (
+      
+    ){ 
+    (
+      body 
+      (
+        statement 
+        (
+          declarationStatement 
+          (
+            dataType int
+          )(
+            assignmentStatement counter := 
+            (
+              expr 
+              (
+                term 
+                (
+                  literals 1
+                )
+              )
+            )
+          )
+        );
+      )(
+        statement 
+        (
+          repeatStatement repeat 
+          (
+            body 
+            (
+              statement 
+              (
+                declarationStatement 
+                (
+                  dataType int
+                )ll
+              );
+            )(
+              statement 
+              (
+                readStatement read ll
+              );
+            )(
+              statement 
+              (
+                assignmentStatement counter := 
+                (
+                  expr 
+                  (
+                    expr 
+                    (
+                      term counter
+                    )
+                  )- 
+                  (
+                    expr 
+                    (
+                      term 
+                      (
+                        literals 1
+                      )
+                    )
+                  )
+                )
+              );
+            )
+          )until 
+          (
+            condition 
+            (
+              expr 
+              (
+                expr 
+                (
+                  term counter
+                )
+              )> 
+              (
+                expr 
+                (
+                  term 
+                  (
+                    literals true
+                  )
+                )
+              )
+            )
+          )
+        )
+      )(
+        statement 
+        (
+          ifStatement if 
+          (
+            condition 
+            (
+              expr 
+              (
+                expr 
+                (
+                  term counter
+                )
+              )> 
+              (
+                expr 
+                (
+                  term 
+                  (
+                    literals true
+                  )
+                )
+              )
+            )
+          )then 
+          (
+            body 
+            (
+              statement 
+              (
+                readStatement read counter
+              );
+            )
+          )end
+        )
+      )
+    )}
+  )
+)

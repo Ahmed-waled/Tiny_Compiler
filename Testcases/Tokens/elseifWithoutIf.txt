@@ -1,0 +1,21 @@
+Token Text -> Token Type
+int -> INT
+main -> MAIN
+( -> LPAR
+) -> RPAR
+{ -> LCURL
+else -> ELSE
+if -> IF
+( -> LPAR
+x -> ID
+> -> GT
+5 -> INTEGER
+) -> RPAR
+{ -> LCURL
+write -> WRITE
+( -> LPAR
+"X is greater than 5" -> STR
+) -> RPAR
+; -> SCOLON
+} -> RCURL
+} -> RCURL

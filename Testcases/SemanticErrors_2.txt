@@ -1,0 +1,36 @@
+int foo(int a, float b) {
+    return a;
+}
+
+int foo(int x) {           // ❌ Function redeclared with same name (different param count is OK, same count would be error if types match)
+    return x + 1;
+}
+
+int bar() {
+    return "wrong";        // ❌ Error: Returning string from int function
+}
+
+int main() {
+    x := 5;                // ❌ Error: x not declared
+    int x;
+    int x;                 // ❌ Error: Redeclaration of x
+
+    foo(x, "hello");       // ❌ Error: Wrong argument type (string instead of float)
+    foo(5);                // ❌ OK: Different signature
+
+    bar("extra");          // ❌ Error: bar expects no arguments
+
+    sum(5);                // ❌ Error: sum not declared
+
+    int a := 1;
+    string s := "test";
+    int result := a + s;   // ❌ Error: Cannot add int and string
+
+    if a && s then         // ❌ Error: Logical AND requires bool operands
+        write "logic";
+    end
+
+    write x + s;           // ❌ Error: Cannot write expression with mixed types
+
+    return 0;
+}

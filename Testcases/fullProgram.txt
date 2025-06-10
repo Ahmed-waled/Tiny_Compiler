@@ -1,0 +1,14 @@
+int main()
+{
+    int counter := 1;
+    repeat
+        int ll;
+        read ll;
+        counter := counter - 1;
+    until counter > true
+
+    if counter > true then
+        read counter;
+    end
+
+}

@@ -1,0 +1,109 @@
+** REPEAT BLOCK **
+
+int main()
+{
+	int val, counter := 5, xx;
+	read val;
+
+	counter := 0;
+
+	repeat
+		val := val - 1;
+		write "Iteration number [";
+		write counter;
+		write "] the value of x = ";
+		write val;
+		write endl;
+		counter := counter+1;
+	until val = 1
+
+}
+
+
+LABEL main
+DECL val
+DECL xx
+STORE 5 counter
+READ val
+STORE 0 counter
+LABEL L0
+SUBI val 1 $T0
+STORE $T0 val
+WRITE "Iteration number ["
+WRITE counter
+WRITE "] the value of x = "
+WRITE val
+WRITE null
+ADDI counter 1 $T1
+STORE $T1 counter
+EQ val 1 $T2
+JUMPZ $T2 L0
+RET
+
+
+** FUNCTION BLOCK **
+int sum(int a, int b)
+{
+	return a + b;
+}
+int main()
+{
+    int a := 3, b := 5;
+	int x := sum(a, b);
+	write x;
+}
+
+
+LABEL sum
+PARAM a
+PARAM b
+ADDI a b $T0
+RET $T0
+LABEL main
+STORE 3 a
+STORE 5 b
+PARAM a
+PARAM b
+CALL sum $T1
+STORE $T1 x
+WRITE x
+RET
+
+** multiple if-else statements **
+int main()
+{
+
+    int z1, counter;
+	if  z1 > 5 || z1 < counter && z1 = 1
+	then
+		write z1;
+	elseif z1 < 5
+	then
+		z1 := 5;
+	else
+	    z1 := counter;
+	end
+
+	return 0;
+}
+
+LABEL main
+DECL z1
+DECL counter
+GT z1 5 $T0
+LT z1 counter $T1
+EQ z1 1 $T2
+AND $T1 $T2 $T3
+OR $T0 $T3 $T4
+JUMPZ $T4 L0
+WRITE z1
+JUMP L1
+LABEL L0
+LT z1 5 $T5
+JUMPZ $T5 L2
+STORE 5 z1
+JUMP L1
+LABEL L2
+STORE counter z1
+LABEL L1
+RET 0

@@ -1,0 +1,33 @@
+int sum(int a, int b)
+{
+	return a + b;
+}
+int sum(int a){
+    return 0;
+}
+
+int sum(){
+    return "hello";
+}
+
+
+int main()
+{
+    int x;
+    int x;
+
+    float b := "sdfg";
+
+    int a;
+    a := 5 + true;
+
+    string s;
+
+    a := s;
+    a := s + s;
+    a := s + 5;
+
+    sum(a, s);
+
+
+}

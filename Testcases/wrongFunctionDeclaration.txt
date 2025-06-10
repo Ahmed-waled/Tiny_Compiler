@@ -1,0 +1,11 @@
+// Test Case: wrongFunctionDeclaration
+int foo(int) {  // Invalid function name and only data type provided with no ID
+    int x;
+    x := 5;
+    return x;
+}
+
+int main() {
+    int result;
+    result := 123foo();
+}

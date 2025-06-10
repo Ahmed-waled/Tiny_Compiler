@@ -1,0 +1,11 @@
+// Test Case: missingReturnStatement
+int foo() {
+    int x;
+    x := 10;
+    // Missing return statement
+}
+
+int main() {
+    int y;
+    y := foo();
+}

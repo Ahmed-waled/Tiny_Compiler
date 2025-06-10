@@ -1,0 +1,15 @@
+(
+  program 
+  (
+    main int main 
+    (
+      
+    ){ body else if 
+    (
+      x > 5 
+    ){ write 
+    (
+      "X is greater than 5" 
+    ); } }
+  )
+)

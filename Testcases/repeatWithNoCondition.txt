@@ -1,0 +1,10 @@
+// Test Case: repeatWithNoCondition
+int main() {
+    repeat
+        int x;
+        x := x + 1;
+
+    until
+
+    // No condition for repeat loop
+}

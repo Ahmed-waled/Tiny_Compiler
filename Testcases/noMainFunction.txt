@@ -1,0 +1,8 @@
+// Test Case: noMainFunction
+int helper() {
+    int x;
+    x := 5;
+    return x;
+}
+
+// No main function present
