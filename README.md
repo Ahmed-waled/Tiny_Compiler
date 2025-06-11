@@ -1,6 +1,3 @@
-### Author: Ahmed Waled Farouk Awad
-### ID: 120210287
-
 ## Introduction:
 This project is a complete compiler for the `Tiny` programming language. `Tiny` is considered as subset of the `C` language contains:
 - Data types: `int`, `float`, `string`, `bool`
